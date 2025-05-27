@@ -1,5 +1,5 @@
 {% set name = "geoarrow-types" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/geoarrow_types-{{ version }}.tar.gz
-  sha256: 2dcb3db9c80b2079a7a61c3e74aa46904f1c899136735f1cacc015757707e924
+  sha256: 82243e4be88b268fa978ae5bba6c6680c3556735e795965b2fe3e6fbfea9f9ee
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:

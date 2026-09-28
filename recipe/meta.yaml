@@ -1,13 +1,13 @@
 {% set name = "geoarrow-types" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/geoarrow_types-{{ version }}.tar.gz
-  sha256: 82243e4be88b268fa978ae5bba6c6680c3556735e795965b2fe3e6fbfea9f9ee
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/geoarrow_types-{{ version }}.tar.gz
+  sha256: cd51972066d08a3ab2165a049e72a57bc4d5832d774b61b2d33decc1ac552bd8
 
 build:
   noarch: python
